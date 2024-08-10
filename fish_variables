@@ -2,9 +2,9 @@
 # VERSION: 3.0
 SETUVAR ZO_CMD:zo
 SETUVAR Z_CMD:z
-SETUVAR Z_DATA:/home/bravo6/\x2elocal/share/z/data
-SETUVAR Z_DATA_DIR:/home/bravo6/\x2elocal/share/z
-SETUVAR Z_EXCLUDE:\x5e/home/bravo6\x24
+SETUVAR Z_DATA:/home/akula/\x2elocal/share/z/data
+SETUVAR Z_DATA_DIR:/home/akula/\x2elocal/share/z
+SETUVAR Z_EXCLUDE:\x5e/home/akula\x24
 SETUVAR __fish_initialized:3400
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_cwd:green
@@ -18,4 +18,4 @@ SETUVAR fish_color_valid_path:\x2d\x2dunderline
 SETUVAR fish_greeting:
 SETUVAR fish_key_bindings:fish_default_key_bindings
 SETUVAR fish_pager_color_selected_background:\x2dr
-SETUVAR fish_user_paths:/home/bravo6/\x2elocal/bin\x1e/home/bravo6/\x2eocal/bin/
+SETUVAR fish_user_paths:/home/akula/\x2envm/versions/node/v22\x2e4\x2e0/bin\x1e/home/akula/\x2elocal/bin\x1e/home/akula/\x2eocal/bin/

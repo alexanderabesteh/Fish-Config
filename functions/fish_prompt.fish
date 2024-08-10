@@ -1,4 +1,3 @@
-# name: L
 function _git_branch_name
   echo (command git symbolic-ref HEAD 2> /dev/null | sed -e 's|^refs/heads/||')
 end
@@ -13,6 +12,8 @@ function fish_prompt
   set -l normal (set_color normal)
 
   set -l arrow "λ"
+    #ΨζΞχγΛφ℘
+    #set -l arrow "󰅂"
   set -l cwd $blue(basename (prompt_pwd))
 
   if [ (_git_branch_name) ]
