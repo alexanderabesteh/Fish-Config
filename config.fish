@@ -1,18 +1,23 @@
+# PATH 
 set -gx PATH /usr/local/bin /usr/bin /bin ~/.local/bin /usr/sbin /sbin 
 set -gx PATH $PATH ~/.nvm/versions/node/v22.4.0/bin ~/.emacs.d/bin
 set -gx EDITOR nvim 
 set -gx JAVA_HOME /usr/lib/jvm/openjdk17
 set -gx PATH $PATH $JAVA_HOME/bin
 
+# Config Aliases
 alias Hypr='cd ~/.config/hypr'
 alias Fish='cd ~/.config/fish'
 alias Kitty='cd ~/.config/kitty'
 alias Nvim='cd ~/.config/nvim'
 alias Waybar='cd ~/.config/waybar'
 
+# Personal Aliases
 alias Documents='cd ~/Documents'
 alias Downloads='cd ~/Downloads'
+alias Assets='cd ~/Documents/Assets'
 
+# Programming Aliases
 alias Go='cd ~/Documents/Programming/Go'
 alias Jupyter='cd ~/Documents/Programming/Jupyter'
 alias Rust='cd ~/Documents/Programming/Rust'
@@ -29,10 +34,11 @@ alias Lua='cd ~/Documents/Programming/Lua'
 # Set up fzf key bindings
 fzf --fish | source
 
+# Launch Hyrpland on Login
 if status is-login
 	bash launch_hypr
 end
 
-# load other files
+# Load other files
 source ~/.config/fish/colors.fish
 set -U fish_greeting ""
