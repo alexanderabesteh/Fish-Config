@@ -42,3 +42,4 @@ end
 # Load other files
 source ~/.config/fish/colors.fish
 set -U fish_greeting ""
+ff

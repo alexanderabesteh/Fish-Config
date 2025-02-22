@@ -9,11 +9,19 @@ end
 function fish_prompt
   set -l blue (set_color blue)
   set -l green (set_color green)
+  set -l yellow (set_color yellow)
+  set -l gray (set_color )
+  set -l orange (set_color ff694f)
   set -l normal (set_color normal)
-
-  set -l arrow "λ"
+  
+    set -l arrow "λ"
+    #set -l arrow "󰳭 "
     #ΨζΞχγΛφ℘
+    #set -l arrow $yellow" "
+    #󰳭
+    set -l front $yellow" "
     #set -l arrow "󰅂"
+    #set -l arrow "󰅂"
   set -l cwd $blue(basename (prompt_pwd))
 
   if [ (_git_branch_name) ]
@@ -26,5 +34,5 @@ function fish_prompt
     end
   end
 
-  echo -n -s $cwd $git_info $normal ' ' $arrow ' '
+  echo -n -s $front ' ' $cwd $git_info $normal ' ' $arrow ' '
 end
