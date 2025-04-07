@@ -2,8 +2,9 @@
 set -gx PATH /usr/local/bin /usr/bin /bin ~/.local/bin /usr/sbin /sbin 
 set -gx PATH $PATH ~/.nvm/versions/node/v22.4.0/bin ~/.emacs.d/bin
 set -gx EDITOR nvim 
-set -gx JAVA_HOME /usr/lib/jvm/openjdk17
-set -gx PATH $PATH $JAVA_HOME/bin
+set -gx JAVA_HOME $HOME/.sdkman/candidates/java/21.0.6-tem
+set -gx PKG_CONFIG_PATH /usr/lib/pkgconfig
+set -gx PATH $JAVA_HOME/bin $PATH $PKG_CONFIG_PATH
 
 # Config Aliases
 alias Hypr='cd ~/.config/hypr'
@@ -11,6 +12,7 @@ alias Fish='cd ~/.config/fish'
 alias Kitty='cd ~/.config/kitty'
 alias Nvim='cd ~/.config/nvim'
 alias Waybar='cd ~/.config/waybar'
+alias Fastfetch='cd ~/.config/fastfetch'
 
 # Personal Aliases
 alias Documents='cd ~/Documents'
@@ -30,6 +32,7 @@ alias Java='cd ~/Documents/Programming/Java'
 alias JavaS='cd ~/Documents/Programming/JavaScript'
 alias Wolfram='cd ~/Documents/Programming/Wolfram\ Mathematica'
 alias Lua='cd ~/Documents/Programming/Lua'
+alias ASM='cd ~/Documents/Programming/ASM'
 
 # Set up fzf key bindings
 fzf --fish | source
