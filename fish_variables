@@ -1,11 +1,14 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export JAVA_HOME:\x1d
 SETUVAR ZO_CMD:zo
 SETUVAR Z_CMD:z
 SETUVAR Z_DATA:/home/akula/\x2elocal/share/z/data
 SETUVAR Z_DATA_DIR:/home/akula/\x2elocal/share/z
 SETUVAR Z_EXCLUDE:\x5e/home/akula\x24
-SETUVAR __fish_initialized:3400
+SETUVAR __fish_initialized:3800
+SETUVAR _fisher_plugins:reitzig/sdkman\x2dfor\x2dfish\x40v2\x2e1\x2e0
+SETUVAR _fisher_reitzig_2F_sdkman_2D_for_2D_fish_40_v2_2E_31_2E_30__files:/home/akula/\x2econfig/fish/functions/sdk\x2efish\x1e/home/akula/\x2econfig/fish/conf\x2ed/sdk\x2efish\x1e/home/akula/\x2econfig/fish/completions/sdk\x2efish
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_cwd:green
 SETUVAR fish_color_cwd_root:red
