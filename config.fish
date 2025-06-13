@@ -4,7 +4,7 @@ set -gx PATH $PATH ~/.nvm/versions/node/v22.4.0/bin ~/.emacs.d/bin
 set -gx EDITOR nvim 
 set -gx JAVA_HOME $HOME/.sdkman/candidates/java/21.0.6-tem
 set -gx PKG_CONFIG_PATH /usr/lib/pkgconfig
-set -gx PATH $JAVA_HOME/bin $PATH $PKG_CONFIG_PATH
+set -gx PATH $JAVA_HOME/bin $PATH $PKG_CONFIG_PATH ~/.cargo/bin
 
 # Config Aliases
 alias Hypr='cd ~/.config/hypr'
