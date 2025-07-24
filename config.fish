@@ -2,9 +2,11 @@
 set -gx PATH /usr/local/bin /usr/bin /bin ~/.local/bin /usr/sbin /sbin 
 set -gx PATH $PATH ~/.nvm/versions/node/v22.4.0/bin ~/.emacs.d/bin
 set -gx EDITOR nvim 
-set -gx JAVA_HOME $HOME/.sdkman/candidates/java/21.0.6-tem
-set -gx PKG_CONFIG_PATH /usr/lib/pkgconfig
-set -gx PATH $JAVA_HOME/bin $PATH $PKG_CONFIG_PATH ~/.cargo/bin
+set -gx PKG_CONFIG_PATH /usr/local/lib/pkgconfig
+set -gx GI_TYPELIB_PATH /usr/lib/girepository-1.0
+set -gx LD_LIBRARY_PATH /usr/local/lib $LD_LIBRARY_PATH
+set -gx JAVA_HOME $HOME/.sdkman/candidates/java/21.0.7-tem
+set -gx PATH $JAVA_HOME/bin $PATH $PKG_CONFIG_PATH ~/.cargo/bin ~/go/bin
 
 # Config Aliases
 alias Hypr='cd ~/.config/hypr'
@@ -13,6 +15,9 @@ alias Kitty='cd ~/.config/kitty'
 alias Nvim='cd ~/.config/nvim'
 alias Waybar='cd ~/.config/waybar'
 alias Fastfetch='cd ~/.config/fastfetch'
+alias Niri='cd ~/.config/niri'
+alias Ags='cd ~/.config/ags'
+alias WayEdges='cd ~/.config/way-edges'
 
 # Personal Aliases
 alias Documents='cd ~/Documents'
@@ -37,9 +42,9 @@ alias ASM='cd ~/Documents/Programming/ASM'
 # Set up fzf key bindings
 fzf --fish | source
 
-# Launch Hyrpland on Login
+# Launch Niri on Login
 if status is-login
-	bash launch_hypr
+    bash launch_niri
 end
 
 # Load other files
