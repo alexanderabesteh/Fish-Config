@@ -5,7 +5,12 @@ set -gx EDITOR nvim
 set -gx PKG_CONFIG_PATH /usr/local/lib/pkgconfig
 set -gx GI_TYPELIB_PATH /usr/lib/girepository-1.0
 set -gx LD_LIBRARY_PATH /usr/local/lib $LD_LIBRARY_PATH
+set -gx LIBVA_DRIVER_NAME nvidia
 set -gx JAVA_HOME $HOME/.sdkman/candidates/java/21.0.7-tem
+set -gx PYTHONPATH $HOME/Documents/Programming/Python/Virtual/lib/python3.13/site-packages
+set -gx TMPDIR /var/tmp
+set -gx NETCHOP $HOME/Downloads/netchop/netchop_3_1_executable
+set -gx GOPATH $HOME/go
 set -gx PATH $JAVA_HOME/bin $PATH $PKG_CONFIG_PATH ~/.cargo/bin ~/go/bin
 
 # Config Aliases
@@ -25,6 +30,7 @@ alias Downloads='cd ~/Downloads'
 alias Assets='cd ~/Documents/Assets'
 
 # Programming Aliases
+alias Programming='cd ~/Documents/Programming'
 alias Go='cd ~/Documents/Programming/Go'
 alias Jupyter='cd ~/Documents/Programming/Jupyter'
 alias Rust='cd ~/Documents/Programming/Rust'
