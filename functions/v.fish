@@ -5,6 +5,5 @@ function v --wraps=nvim --description 'alias v=nvim'
   nvim $argv;
 
   set -e NVIM_RUNNING
-  # Restore original transparency after exiting Neovim
   kitty @ set-background-opacity 0.0
 end
